@@ -24,11 +24,11 @@ header {
 }
 
 .titleMenu {
-    color: #bda9a9;
+    color: #9f9b9b;
 }
 
 .titleMenu span {
-    color: #033042;
+    color: #01161e;
 }
 
 .logo {
@@ -44,7 +44,7 @@ nav {
     justify-content: flex-end;
 }
 
-.desktop {
+.nav-dskt {
     display: flex;
     width: 100%;
     justify-content: flex-end;
@@ -52,25 +52,25 @@ nav {
     margin-right: 24px;            
 }
 
-.desktop > a {
-    padding-left:16px;             
+.nav-dskt > a {
+    padding-left: 24px;             
     text-decoration: none;
-    color:#515151;
+    color: #01161e;
 }
 
 /* Remove mobile icon */
-.mobile {
+.nav-mobl {
     display: none;
 }
 
 @media only screen and (max-width:720px) 
 {
     /* Do Not Display */
-    .desktop, .logo {
+    .nav-dskt, .logo {
       display: none;
     }
 
-    .mobile {
+    .nav-mobl {
         display: flex;
         justify-content: space-around;
         align-items: center;
