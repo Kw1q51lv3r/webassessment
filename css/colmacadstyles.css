@@ -232,3 +232,69 @@ nav {
 
     .sect2-text-mobl > p {padding-top: 16px; padding-bottom: 8px;}
 }
+
+/* Section 3 */
+
+.sect3-dskt {
+    background-color: lightgray;
+}
+
+.sect3-dskt > h2 {
+    text-align: center;
+    padding-top: 32px;
+}
+
+.sect3-content-a-dskt {
+    display: flex;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 16px;
+}
+.sect3-content-b-dskt {
+    display: flex;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 16px;
+}
+
+.sect3-content-card-dskt {
+    background-color: white;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    max-width: 525px;
+}
+
+.sect3-content-card-dskt > img {height: auto; width: 100%;}
+
+.sect3-content-card-dskt > h4 {padding-left: 16px; padding-top: 16px;}
+.sect3-prime {padding-left: 16px; padding-bottom: 16px;}
+.sect3-sub {padding-left: 16px; padding-bottom: 24px;}
+
+.sect3-mobl {display: none;}
+
+@media only screen and (max-width:720px) {
+
+    .sect3-dskt {display: none;}
+
+    .sect3-mobl {
+        display: flex;
+        flex-direction: column;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 62px;
+        padding-right: 62px;
+    }
+}
+    .sect3-head-mobl {
+        text-align: center;
+        margin: 8px;
+    }
+
+    .sect3-bar-mobl {
+        background-color: lightgray;
+        text-align: center;
+        margin: 8px;
+        padding: 8px;
+    }
