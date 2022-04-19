@@ -10,11 +10,11 @@ body {
     color: #989898;
 }
 
-h1 {font-size: 30px; font-weight: bold;}
-h2 {font-size: 24px;}
-h3 {font-size: 22px;}
-h4 {font-size: 20px;}
-h5 {font-size: 18px;}
+h1 {font-size: 30px; font-weight: bold; color: #4f4f4f;}
+h2 {font-size: 24px; color: #4f4f4f;}
+h3 {font-size: 22px; color: #4f4f4f;}
+h4 {font-size: 20px; color: #4f4f4f;}
+h5 {font-size: 18px; color: #4f4f4f;}
 
 /* header and nav */
 
@@ -53,19 +53,17 @@ nav {
 }
 
 .nav-dskt > a {
-    padding-left: 24px;             
+    padding-left: 16px;             
     text-decoration: none;
     color: #01161e;
 }
 
-/* Remove mobile icon */
 .nav-mobl {
     display: none;
 }
 
 @media only screen and (max-width:720px) 
 {
-    /* Do Not Display */
     .nav-dskt, .logo {
       display: none;
     }
@@ -77,3 +75,82 @@ nav {
         width: 100%;          
     }
 }
+
+/* section 1 */
+
+.sect1-dskt {
+    background-color: lightgray;
+    display: flex;
+    margin: auto;
+}
+
+.sect1-dskt > img {
+    padding: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 60%;
+}
+
+.sect1-content-dskt {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.sect1-content-dskt > h1, h4 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.sect1-content-dskt > a {
+    background-color: #4f4f4f;
+    width: 60%;
+    padding: 8px;
+    text-align: center;
+    justify-content: center;
+    color: lightgray;
+}
+
+.sect1-mobl {display: none;}
+
+@media only screen and (max-width:720px) {
+    
+    .sect1-dskt {display: none;}
+    
+    .sect1-mobl {
+        background-color: lightgray;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .sect1-mobl > img {
+        width: 100%;
+        padding-bottom: 8px;
+    }
+
+    .sect1-content-mobl {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .sect1-content-mobl > h1, h4 {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .sect1-content-mobl > a {
+        background-color: #4f4f4f;
+        width: 60%;
+        padding: 8px;
+        text-align: center;
+        justify-content: center;
+        color: lightgray;
+        margin: auto;
+        margin-bottom: 32px;
+    }
+}
+
